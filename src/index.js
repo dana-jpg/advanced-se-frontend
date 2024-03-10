@@ -3,7 +3,7 @@ import "./index.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import App from "./App";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -15,13 +15,13 @@ import Footer from "./template/Footer";
 
 
 library.add(fas, far, fab);
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
-ReactDOM.render(
+root.render(
     <BrowserRouter>
     <Header />
       <App />
     <Footer />
     </BrowserRouter>
-  ,
-  document.getElementById("root")
 );

@@ -1,13 +1,13 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // If using React Router v6 (use useHistory for v5)
+import { useNavigate } from 'react-router-dom'; 
 
 function RegisterPage() {
-  const navigate = useNavigate(); // useHistory for React Router v5
+  const navigate = useNavigate(); 
 
   const handleRegister = (event) => {
     event.preventDefault();
-    // Add your registration logic here
-    navigate('/login'); // Redirect to the login page or dashboard after registration
+    
+    navigate('/login'); 
   };
 
   return (
