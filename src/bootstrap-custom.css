@@ -10740,30 +10740,6 @@ textarea.form-control-lg {
   border-radius: 25px 5px 5px 5px;
 }
 
-.landing-video {
-  position: fixed; /* Or 'absolute' if 'fixed' doesn't work as expected */
-  top: 0;
-  left: 0;
-  width: 100vw; /* Cover entire viewport width */
-  height: 100vh; /* Cover entire viewport height */
-  object-fit: cover; /* Cover the area without losing aspect ratio */
-  z-index: 0; /* Behind everything else */
-}
-
-
-.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Adjust vertically */
-  align-items: center; /* Center horizontally */
-  background: rgba(255, 255, 255, 0.5);
-  z-index: 1;
-}
 
 .search-bar-container {
   margin-top: -20vh; /* Adjust based on your design */

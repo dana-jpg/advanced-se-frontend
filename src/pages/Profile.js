@@ -1,33 +1,44 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function ProfilePage() {
-    const [name, setName] = useState('John Doe'); // Default name, update as necessary
-    const [jobTitle, setJobTitle] = useState('Full Stack Developer'); // Default job title, update as necessary
-    const [location, setLocation] = useState('Bay Area, San Francisco, CA'); // Default location, update as necessary
-    const [website, setWebsite] = useState('https://bootdey.com'); // Default website, update as necessary
-    const [github, setGithub] = useState('bootdey'); // Default GitHub username, update as necessary
-    const [twitter, setTwitter] = useState('@bootdey'); // Default Twitter handle, update as necessary
-    const [instagram, setInstagram] = useState('bootdey'); // Default Instagram username, update as necessary
-    const [facebook, setFacebook] = useState('bootdey'); // Default Facebook username, update as necessary
-    const [email, setEmail] = useState('fip@jukmuh.al'); // Default email, update as necessary
-    const [phone, setPhone] = useState('239-816-9029'); // Default phone number, update as necessary
-    const [mobile, setMobile] = useState('320-380-4539'); // Default mobile number, update as necessary
-    const [address, setAddress] = useState('Bay Area, San Francisco, CA'); // Default address, update as necessary
+    //const [name, setName] = useState('John Doe'); 
+    //const [location, setLocation] = useState('Bay Area, San Francisco, CA'); 
+    const [website, setWebsite] = useState('https://bootdey.com'); 
+    const [github, setGithub] = useState('bootdey'); 
+    const [twitter, setTwitter] = useState('@bootdey'); 
+    const [instagram, setInstagram] = useState('bootdey'); 
+    const [facebook, setFacebook] = useState('bootdey'); 
+    const [email, setEmail] = useState('fip@jukmuh.al'); 
+    const [phone, setPhone] = useState('239-816-9029'); 
+    const [mobile, setMobile] = useState('320-380-4539'); 
+    const [address, setAddress] = useState('Bay Area, San Francisco, CA'); 
 
-    return (
-        <div className="container mt-5">
+    const Spinner = () => (
+        <div className="spinner">User not found</div>
+      );
+    
+    const location = useLocation();
+    const agent = location.state ? location.state.agent : null;
+    console.log("agent " + JSON.stringify(agent));
+
+    let content = <Spinner />;
+
+    if (agent) {
+        content = (
+            <div className="container mt-5">
             {/* Profile widget */}
             <div className="row gutters-sm">
                 <div className="col-md-4 mb-3">
                     <div className="card">
                         <div className="card-body">
                             <div className="d-flex flex-column align-items-center text-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" className="rounded-circle" width="150"></img>
+                                <img src={agent.image} alt="Admin" className="rounded-circle" width="150"></img>
                                 <div className="mt-3">
-                                    <h4>{name}</h4>
-                                    <p className="text-primary mb-1">{jobTitle}</p>
-                                    <p className="text-muted font-size-sm">{location}</p>
-                                    <button className="btn btn-primary me-1">Follow</button>
+                                    <h4>{agent.name}</h4>
+                                    <p className="text-primary mb-1">Rating: {agent.rating}</p>
+                                    <p className="text-muted font-size-sm">ciao</p>
+                                    <button className="btn btn-primary me-1">Rate</button>
                                     <button className="btn btn-outline-primary">Message</button>
                                 </div>
                             </div>
@@ -46,11 +57,11 @@ function ProfilePage() {
                 <div className="col-md-8">
                     <div className="card mb-3">
                         <div className="card-body">
-                            <ProfileField title="Full Name" value={name} />
-                            <ProfileField title="Email" value={email} />
-                            <ProfileField title="Phone" value={phone} />
-                            <ProfileField title="Mobile"  value={mobile} />
-                            <ProfileField title="Address" value={address} />
+                            <ProfileField title="Full Name" value={agent.name} />
+                            <ProfileField title="Email" value={agent.email} />
+                            <ProfileField title="Phone" value={agent.phone} />
+                            <ProfileField title="Mobile"  value={agent.phone} />
+                            <ProfileField title="Address" value={agent.adress} />
                             <div className="row">
                                 <div className="col-sm-12">
                                     <a className="btn btn-dark" target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
@@ -60,6 +71,13 @@ function ProfilePage() {
                     </div>
                 </div>
             </div>
+        </div>
+        );
+    }
+
+    return (
+        <div className="container mt-5">
+            {content}
         </div>
     );
 }

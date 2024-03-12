@@ -11,9 +11,9 @@ function ProductDetail() {
   let { id } = useParams();
   console.log("id" + id);
   const property = housesData.find(house => house.id === Number(id));
+  const agent = property.agent;
 
   function changeRating(newRating) {}
-
   return (
     <div className="container mt-5 py-4 px-xl-5">
       <ScrollToTopOnMount/>
@@ -79,8 +79,8 @@ function ProductDetail() {
                 </button>
               </div>
               <div className="col">
-                <button className="btn btn-dark py-2 w-100">Contact owner</button>
-              </div>
+                <Link to={{ pathname: "/profile" }} state={{agent: agent }} className="btn btn-dark py-2 w-100">View profile</Link>
+            </div>
             </div>
 
             <h4 className="mb-0">Details</h4>

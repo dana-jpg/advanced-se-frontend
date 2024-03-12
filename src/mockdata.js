@@ -74,6 +74,9 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+      email: 'patricia@gmail.com',
+      adress: '7240C Argyle St. Lawndale, CA 90260',
+      rating: '4'
     },
   },
   {
@@ -95,6 +98,9 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+      email: 'darylhawker@gmx.com',
+      adress: '798 Talbot St. Bridgewater, NJ 08807',
+      rating: '3'
     },
   },
   {
@@ -116,6 +122,10 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+      email: 'a.smith@gmail.com',
+      adress: '2 Glen Creek St. Alexandria, VA 22304',
+      rating: '3'
+      
     },
   },
   {
@@ -137,6 +147,9 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+      email: 'kaitlyn@outlook.com',
+      adress: '84 Woodland St. Cocoa, FL 32927',
+      rating: '3'
     },
   },
   {
@@ -158,6 +171,9 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+      email: 'grover.rob@gmail.com',
+      adress: '28 Westport Dr. Warminster, PA 18974',
+      rating: '5'
     },
   },
   {
@@ -179,6 +195,9 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+      email: 'karensorensen@gmx.com',
+      adress: '32 Pawnee Street Butte, MT 59701',
+      rating: '3'
     },
   },
   {
@@ -200,6 +219,9 @@ export const housesData = [
       image: Agent7,
       name: 'Jawhar Shamil Naser',
       phone: '0123 456 78910',
+      email: 'jawhar.shamil@outlook.de',
+      adress: '32 Pawnee Street Butte, MT 59701',
+      rating: '3'
     },
   },
   {
@@ -221,6 +243,9 @@ export const housesData = [
       image: Agent8,
       name: 'Juana Douglass',
       phone: '0123 456 78910',
+      email: 'juana.d@gmx.com',
+      adress: '28 Westport Dr. Warminster, PA 18974',
+      rating: '3'
     },
   },
   {
@@ -242,6 +267,9 @@ export const housesData = [
       image: Agent9,
       name: 'Jerry Schenck',
       phone: '0123 456 78910',
+      email: 'jerry.schenck@gmail.com',
+      adress: '84 Woodland St. Cocoa, FL 32927',
+      rating: '3'
     },
   },
   {
@@ -263,6 +291,9 @@ export const housesData = [
       image: Agent10,
       name: 'Vera Levesque',
       phone: '0123 456 78910',
+      email: 'levesqueV@gmx.com',
+      adress: '7240C Argyle St. Lawndale, CA 90260',
+      rating: '5'
     },
   },
   {
@@ -284,6 +315,9 @@ export const housesData = [
       image: Agent11,
       name: 'Sofia Gomes',
       phone: '0123 456 78910',
+      email: 'sofiagomes@gmx.com',
+      adress: '798 Talbot St. Bridgewater, NJ 08807',
+      rating: '4'
     },
   },
   {
@@ -305,6 +339,9 @@ export const housesData = [
       image: Agent12,
       name: 'Raymond Hood',
       phone: '0123 456 78910',
+      email: 'raymond@gmx.com',
+      adress: '2 Glen Creek St. Alexandria, VA 22304',
+      rating: '3'
     },
   },
   {
@@ -326,6 +363,9 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+      email: 'patricia@gmail.com',
+      adress: '84 Woodland St. Cocoa, FL 32927',
+      rating: '3'
     },
   },
   {
@@ -347,6 +387,9 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+      email: 'darylhawker@gmx.com',
+      adress: '798 Talbot St. Bridgewater, NJ 08807',
+      rating: '3'
     },
   },
   {
@@ -368,6 +411,9 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+      email: 'amado.smithr@gmail.com',
+      adress: '32 Pawnee Street Butte, MT 59701',
+      rating: '4'
     },
   },
   {
@@ -389,6 +435,9 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+      email: 'kaitlyn@gmx.com',
+      adress: '32 Pawnee Street Butte, MT 59701',
+      rating: '4.5'
     },
   },
   {
@@ -410,6 +459,9 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+      email: 'grover.robinson@live.it',
+      adress: '28 Westport Dr. Warminster, PA 18974',
+      rating: '3'
     },
   },
   {
@@ -431,6 +483,9 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+      email: 'karen.sorensen@outlook.com',
+      adress: '84 Woodland St. Cocoa, FL 32927',
+      rating: '2'
     },
   },
 ];
